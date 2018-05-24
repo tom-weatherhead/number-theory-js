@@ -1,0 +1,45 @@
+{
+  "name": "number-theory-js",
+  "version": "0.0.0",
+  "description": "The Sieve of Eratosthenes (an ancient Greek prime number generator) as a JavaScript library",
+  "main": "lib/number-theory-js.js",
+  "homepage": "https://github.com/tom-weatherhead/number-theory-js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tom-weatherhead/number-theory-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tom-weatherhead/number-theory-js/issues"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-minify": "^0.3.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^20.1.0",
+    "grunt-replace": "^1.0.1"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "keywords": [
+    "Eratosthenes",
+    "Euclid",
+    "mathematics",
+    "prime numbers",
+    "sieve"
+  ],
+  "author": {
+    "name": "Tom Weatherhead",
+    "url": "https://github.com/tom-weatherhead"
+  },
+  "license": "MIT"
+}

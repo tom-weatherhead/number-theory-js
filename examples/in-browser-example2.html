@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>number-theory-js In-Browser Example 2</title>
+
+		<meta charset="utf-8" />
+
+        <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+		<script type="text/javascript" src="../lib/number-theory-js.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body style="text-align: center;">
+		<h3>number-theory-js In-Browser Example 2</h3>
+		<br />
+
+		<div>
+			gcd: m = <input id="mGCD" type="text" />
+			n = <input id="nGCD" type="text" />
+			<br />
+			<br />
+			<input type="button" value="Call gcd()" onclick="callGCD()" />
+			<br />
+			<br />
+			Result of gcd() : <span id="resultGCD"></span>
+		</div>
+
+		<div>
+			sieve: n = <input id="nSieve" type="text" />
+			<br />
+			<br />
+			<input type="button" value="Call sieve()" onclick="callSieve()" />
+			<br />
+			<br />
+			Result of sieve() : <span id="resultSieve"></span>
+		</div>
+
+		<div>
+			factorize: n = <input id="nFactorize" type="text" />
+			<br />
+			<br />
+			<input type="button" value="Call factorize()" onclick="callFactorize()" />
+			<br />
+			<br />
+			Result of factorize() : <span id="resultFactorize"></span>
+		</div>
+	</body>
+</html>
