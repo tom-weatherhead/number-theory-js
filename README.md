@@ -30,6 +30,9 @@ Returns the unique prime factorization of `n` as a list of integers
 #### sieve(n)
 Returns the list of all prime numbers less than `n`, calculated using the Sieve of Eratosthenes
 
+#### totient(n)
+Euler's totient function: Returns the list of all positive integers less than `n` that are relatively prime to `n`
+
 ## License
 Copyright (c) 2018 Tom Weatherhead
 Licensed under the MIT license

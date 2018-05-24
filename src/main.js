@@ -1,3 +1,7 @@
+	// See https://en.wikipedia.org/wiki/Group_(mathematics)
+	// See https://en.wikipedia.org/wiki/Group_theory
+	// See https://www.geeksforgeeks.org/number-theory-interesting-facts-and-algorithms/
+
 	/**
 	 * gcd
 	 *
@@ -95,10 +99,8 @@
 	function factorize (n) {					// eslint-disable-line no-unused-vars
 		n = parseInt(n, 10);
 
-		if (isNaN(n)) {
+		if (isNaN(n) || n < 2) {
 			throw new Error('Invalid argument');
-		} else if (n < 2) {
-			return [];
 		}
 
 		let primes = [];
@@ -143,6 +145,16 @@
 	}
 
 	function totient (n) {
+		// See https://en.wikipedia.org/wiki/Euler%27s_totient_function
+		// See https://www.geeksforgeeks.org/eulers-totient-function/
+
+		n = parseInt(n, 10);
+
+		if (isNaN(n) || n < 2) {
+			throw new Error('Invalid argument');
+		}
+
+		/*
 		const primeFactorsOfN = removeDuplicates(factorize(n));
 		let result = n;
 
@@ -151,4 +163,7 @@
 		});
 
 		return result;
+		*/
+
+		return removeDuplicates(factorize(n)).reduce((accumulator, p) => accumulator * (p - 1) / p, n);
 	}
