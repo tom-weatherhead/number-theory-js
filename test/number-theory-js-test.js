@@ -3,7 +3,7 @@ const engine = require(path.join(__dirname, '..', 'lib', 'number-theory-js.js'))
 
 exports.lifecycle = {
 	test: function (test) {
-		test.expect(16);
+		test.expect(18);
 
 		test.equal(engine.gcd(35, 84),				7,										'Should be 7');
 		test.equal(engine.gcd(24, 80),				8,										'Should be 8');
@@ -23,6 +23,9 @@ exports.lifecycle = {
 		test.deepEqual(engine.factorize(6),			[2, 3],									'Should be [2, 3]');
 		test.deepEqual(engine.factorize(8),			[2, 2, 2],								'Should be [2, 2, 2]');
 		test.deepEqual(engine.factorize(72),		[2, 2, 2, 3, 3],						'Should be [2, 2, 2, 3, 3]');
+
+		test.equal(engine.totient(11),				10,										'Should be 10');
+		test.equal(engine.totient(12),				4,										'Should be 4');
 
 		test.done();
 	}

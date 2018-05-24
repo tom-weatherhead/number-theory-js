@@ -137,3 +137,18 @@
 
 		//return factors;
 	}
+
+	function removeDuplicates (array) {
+		return Array.from(new Set(array));
+	}
+
+	function totient (n) {
+		const primeFactorsOfN = removeDuplicates(factorize(n));
+		let result = n;
+
+		primeFactorsOfN.forEach(p => {
+			result = result * (p - 1) / p;
+		});
+
+		return result;
+	}
