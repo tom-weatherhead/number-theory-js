@@ -15,14 +15,14 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-minify": "^0.3.0",
-    "grunt": "^1.0.1",
+    "babel-core": "^6.26.3",
+    "babel-minify": "^0.4.3",
+    "grunt": "^1.0.2",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
     "grunt-contrib-uglify": "^3.3.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^20.1.0",
     "grunt-replace": "^1.0.1"
   },
