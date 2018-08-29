@@ -12,23 +12,24 @@
     "url": "https://github.com/tom-weatherhead/number-theory-js/issues"
   },
   "scripts": {
+    "start": "grunt",
     "test": "grunt test"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-minify": "^0.4.3",
-    "grunt": "^1.0.2",
-    "grunt-cli": "^1.2.0",
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.3.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-nodeunit": "^2.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-uglify": "^3.4.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-eslint": "^20.1.0",
+    "grunt-eslint": "^21.0.0",
     "grunt-replace": "^1.0.1"
   },
   "engineStrict": true,
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">= 8"
   },
   "keywords": [
     "Eratosthenes",
