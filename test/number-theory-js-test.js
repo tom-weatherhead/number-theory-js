@@ -2,7 +2,8 @@
 //const engine = require(path.join(__dirname, '..', 'lib', 'number-theory-js.js'));	// Or just: require('..'); ?
 const engine = require('..');
 
-exports.lifecycle = {
+// exports.lifecycle = {
+module.exports = {
 	test: function (test) {
 		test.expect(23);
 

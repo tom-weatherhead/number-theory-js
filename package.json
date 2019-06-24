@@ -1,46 +1,49 @@
 {
-  "name": "number-theory-js",
-  "version": "0.0.0",
-  "description": "The Sieve of Eratosthenes (an ancient Greek prime number generator) as a JavaScript library",
-  "main": "lib/number-theory-js.js",
-  "homepage": "https://github.com/tom-weatherhead/number-theory-js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/tom-weatherhead/number-theory-js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tom-weatherhead/number-theory-js/issues"
-  },
-  "scripts": {
-    "start": "grunt",
-    "test": "grunt test"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-minify": "^0.4.3",
-    "grunt": "^1.0.3",
-    "grunt-cli": "^1.3.1",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-nodeunit": "^2.0.0",
-    "grunt-contrib-uglify": "^3.4.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-eslint": "^21.0.0",
-    "grunt-replace": "^1.0.1"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 8"
-  },
-  "keywords": [
-    "Eratosthenes",
-    "Euclid",
-    "mathematics",
-    "prime numbers",
-    "sieve"
-  ],
-  "author": {
-    "name": "Tom Weatherhead",
-    "url": "https://github.com/tom-weatherhead"
-  },
-  "license": "MIT"
+	"name": "number-theory-js",
+	"shortName": "number-theory",
+	"version": "0.0.0",
+	"description": "The Sieve of Eratosthenes (an ancient Greek prime number generator) as a JavaScript library",
+	"main": "dist/number-theory.js",
+	"homepage": "https://github.com/tom-weatherhead/number-theory-js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/tom-weatherhead/number-theory-js.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tom-weatherhead/number-theory-js/issues"
+	},
+	"scripts": {
+		"build": "npm i && grunt && npm pack",
+		"buildw": "npm i & grunt & npm pack",
+		"clean": "rm -rf node_modules && rm -f dist/* && rm -f package-lock.json",
+		"cleanw": "rmdir /Q /S node_modules & del /Q dist\\* & del package-lock.json",
+		"rebuild": "npm run clean & npm run build",
+		"rebuildw": "npm run cleanw & npm run buildw",
+		"start": "grunt",
+		"test": "grunt test"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.4.5",
+		"@babel/preset-env": "^7.4.5",
+		"babel-loader": "^8.0.6",
+		"grunt": "^1.0.4",
+		"grunt-contrib-concat": "^1.0.1",
+		"grunt-contrib-nodeunit": "^2.0.0",
+		"grunt-eslint": "^21.1.0",
+		"grunt-webpack": "^3.1.3",
+		"webpack": "^4.35.0"
+	},
+	"engineStrict": true,
+	"engines": {
+		"node": ">= 8"
+	},
+	"keywords": [
+		"Eratosthenes",
+		"Euclid",
+		"mathematics",
+		"prime numbers",
+		"sieve"
+	],
+	"author": "Tom Weatherhead <null@2hrd4u.org> (https://httpbin.org/status/418)",
+	"license": "MIT"
 }
